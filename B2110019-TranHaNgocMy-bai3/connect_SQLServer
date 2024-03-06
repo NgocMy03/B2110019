@@ -1,0 +1,7 @@
+<?php
+// connect to DSN "MSSQLServer" with user "user1" and password "user1"
+    $connect = odbc_connect("MSSQLServer", "user1", "user1") 
+        or die ("Could not connect to server");
+// close the connection
+odbc_close($connect);
+?>
